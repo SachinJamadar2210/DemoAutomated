@@ -42,14 +42,14 @@ public class SearchPageActions {
 		Thread.sleep(1000);	
 	}
 	public void Pad() {
-//		SearchPage.dropDown.click();
-//		SearchPage.Best.click();
-//		SearchPage.Pad.click();
-//		SearchPage.body.click();
-//		SearchPage.Beauty.click();
-//		SearchPage.Drugstore.click();
-//		SearchPage.Fashion.click();
-//		SearchPage.Sports.click();
+		SearchPage.dropDown.click();
+		SearchPage.Best.click();
+		SearchPage.Pad.click();
+		SearchPage.body.click();
+		SearchPage.Beauty.click();
+		SearchPage.Drugstore.click();
+		SearchPage.Fashion.click();
+		SearchPage.Sports.click();
 		SearchPage.All.click();
 	}
 	public void Book(){
