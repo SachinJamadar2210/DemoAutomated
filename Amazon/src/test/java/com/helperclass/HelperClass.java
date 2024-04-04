@@ -15,11 +15,11 @@ private static HelperClass helperClass;
 		wait = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TIMEOUT));
 		driver.manage().window().maximize();
-	// JavascriptExecutor js = (JavascriptExecutor)driver; 
-		WebDriver driver;
+
 	   
 		
 	}
+	
 	public static void openpage(String Url) {
 		driver.get(Url);
 	}
@@ -31,11 +31,15 @@ private static HelperClass helperClass;
 			helperClass = new HelperClass();
 		}
 	}
+//	public static void refreshPage(WebDriver driver) {
+//		JavascriptExecutor js = (JavascriptExecutor)driver;
+//		js.executeScript("scrollBy(0, 200)");
+//		}
 	public static void teardown() {
 		if(driver==null) {
 			
 		}
-		//driver.close();
-		helperClass = null;
+//		driver.close();
+//		helperClass = null;
 	}
 }

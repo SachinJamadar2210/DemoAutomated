@@ -1,7 +1,4 @@
 package com.stepDefination;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
 import com.helperclass.HelperClass;
 import com.pageActions.SearchPageActions;
 import com.pageLocators.SearchPageLocators;
@@ -12,7 +9,7 @@ import io.cucumber.java.en.When;
 public class SearchstepDefination {
 	SearchPageLocators objLogin = new SearchPageLocators();
 	SearchPageActions objhome = new SearchPageActions();
-	WebDriver driver = new ChromeDriver();
+	
 	@Given("Open Browser {string}")
 	public void open_browser(String url) {
       HelperClass.openpage(url);	
